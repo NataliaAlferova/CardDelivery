@@ -8,7 +8,7 @@ import java.util.Date;
 
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
-import static org.openqa.selenium.Keys.BACK_SPACE;
+import static org.openqa.selenium.Keys.*;
 
 public class CardDeliveryTest {
     @Test
