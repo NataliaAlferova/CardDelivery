@@ -2,16 +2,9 @@ import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.conditions.Visible;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.Keys;
-import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.util.Calendar;
 import java.util.Date;
-import java.util.GregorianCalendar;
-import java.util.Locale;
 
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
@@ -24,8 +17,8 @@ public class CardDeliveryTest {
         Date date = new Date(System.currentTimeMillis() + 3*24*60*60*1000);
 
         open("http://localhost:9999");
-        Configuration.browser ="chrome";
-        Configuration.holdBrowserOpen=true;
+//        Configuration.browser ="chrome";
+//        Configuration.holdBrowserOpen=true;
         $ ("[placeholder='Город']").setValue("Ульяновск");
         $ ("[placeholder='Дата встречи']").doubleClick();
         $ ("[placeholder='Дата встречи']").sendKeys(BACK_SPACE);
