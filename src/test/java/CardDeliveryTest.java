@@ -29,7 +29,7 @@ public class CardDeliveryTest {
         $("[name='phone']").setValue("+79999999999");
         $("[data-test-id='agreement']").click();
         $("[class='button__text']").click();
-        $("[class='notification__title']").shouldHave(Condition.text("Встреча успешно забронирована на" + planningDate),
+        $("[class='notification__content']").shouldHave(Condition.text("Встреча успешно забронирована на "+ planningDate),
                 Duration.ofSeconds(15));
     }
 }
