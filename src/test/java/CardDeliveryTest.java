@@ -18,8 +18,8 @@ public class CardDeliveryTest {
     public void shouldBeSuccess() {
 
         open("http://localhost:9999");
-        Configuration.browser = "chrome";
-        Configuration.holdBrowserOpen = true;
+//        Configuration.browser = "chrome";
+//        Configuration.holdBrowserOpen = true;
         $("[placeholder='Город']").setValue("Ульяновск");
         $("[placeholder='Дата встречи']").doubleClick();
         $("[placeholder='Дата встречи']").sendKeys(BACK_SPACE);
